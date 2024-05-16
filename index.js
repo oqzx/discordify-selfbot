@@ -10,4 +10,14 @@ client.on('ready', () => {
     playPlaylist();
 });
 
+process.on("uncaughtException", (err) => {
+    console.log(err);
+})
+process.on('unhandledRejection', (message, err) => {
+    console.log(message, err);
+});
+process.on('uncaughtExceptionMonitor', (err) => {
+    console.log(err);
+});
+
 client.login(process.env.DISCORD_TOKEN);

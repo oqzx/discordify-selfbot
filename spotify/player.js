@@ -5,7 +5,7 @@ const { playlistId } = require('../config/config.js');
 const logger = require('../logger/logger.js');
 
 let currentTrackIndex = 0;
-let isShuffling = true;
+const isShuffling = true;
 
 async function playPlaylist() {
     const spotifyApiClient = await authenticateWithSpotify();
@@ -21,8 +21,8 @@ async function playPlaylist() {
             currentTrackIndex = i;
 
             const track = tracks[i].track;
-            const albumArtId = track.album.images[1].url.split('/').pop();
-            const albumArt = `spotify:${albumArtId}`;
+            const albumArtId = track.album.images[1]?.url.split('/').pop();
+            const albumArt = albumArtId ? `spotify:${albumArtId}` : '';
 
             const spotify = new SpotifyRPC(client)
                 .setAssetsLargeImage(albumArt)
@@ -49,6 +49,7 @@ async function playPlaylist() {
         playPlaylist();
     } catch (error) {
         logger.error('Track', `Error playing playlist: ${error}`);
+        setTimeout(playPlaylist, 5000);
     }
 }
 

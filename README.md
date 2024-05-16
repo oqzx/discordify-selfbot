@@ -15,9 +15,9 @@ Before running this project, make sure you have the following:
 
 1. Clone this repository to your local machine:
 
-  ```bash
-  git clone https://github.com/oqzx/discordify-selfbot.git
-  ```
+    ```bash
+    git clone https://github.com/oqzx/discordify-selfbot.git
+    ```
 
 2. Navigate to the project directory (Example):
 

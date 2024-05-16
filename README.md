@@ -13,10 +13,6 @@ Before running this project, make sure you have the following:
 
 ## Installation
 
-1. Clone this repository:
-
-## Installation
-
 1. Clone this repository to your local machine:
 
   ```bash

@@ -1,6 +1,6 @@
 # discordify-selfbot
 
-This project enables seamless integration between Discord and Spotify, allowing you to keep your Discord activity showing that you're listening to Spotify all the time.. Follow the steps below to set it up.
+This project enables seamless integration between Discord and Spotify, allowing you to keep your Discord activity showing that you're listening to Spotify all the time. Follow the steps below to set it up.
 
 ## Prerequisites
 

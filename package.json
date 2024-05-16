@@ -1,0 +1,26 @@
+{
+  "name": "discordify-selfbot",
+  "version": "1.1.0",
+  "description": "A program that plays a Spotify playlist and updates your Discord status accordingly. This could be used to keep your Discord activity showing that you're listening to Spotify all the time.",
+  "repository": "https://github.com/oqzx/discordify-selfbot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": {
+    "name": "oqzx",
+    "url": "https://github.com/oqzx"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "spotify-web-api-node": "^5.0.2",
+    "discord.js-selfbot-v13": "^3.1.4"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.githubusercontent.com/oqzx/discordify-selfbot/main/LICENSE"
+    }
+  ]
+}
